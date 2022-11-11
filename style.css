@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    /* box-sizing: border-box; */
+    list-style: none;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;   
+}
+button:hover{
+    cursor: pointer;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+    background: hsl(220, 16%, 96%);
+    width: 100%;    
+    overflow-x: hidden;
+}
+header{
+    position: relative;
+    z-index: 1000;
+   
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0px 15px 0px;
+    background: hsl(0, 0%, 100%);
+}
+.logo{
+    width: 139px;
+    height: 20px;
+}
+.menu{
+    /* display: flex;
+    justify-content: space-around; */
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+.menu li{
+    padding: 20px;
+    color: hsl(233, 8%, 62%);
+  /*  background-color:hsl(136, 65%, 51%);*/
+}
+li a{
+    text-decoration: none;
+    color: hsl(233, 8%, 62%);
+    position:relative;
+}
+li a::after{
+    position:absolute;
+    left: 0;
+    bottom: -35px;
+    width: 100%;
+    content: "";
+    height: 4px;
+    background:linear-gradient(to right,hsl(136, 65%, 51%) 15%, hsl(192, 70%, 51%) 80%);   
+  opacity: 0;
+}
+a:hover:after{
+opacity: 1;
+}
+.btn_nav{
+    background:linear-gradient(to right,hsl(136, 65%, 51%) 10%, hsl(192, 70%, 51%) 80%);
+    padding: 12px 30px 12px 30px;    
+    border-radius: 150px;
+    border:none;
+    color: white;
+}
+.container_first{
+    position: relative;
+    /* position: absolute; 
+    Isto estava atrapalhando o .container_second
+    que estava ficando abaixo do header após eu colocar
+    o menu com position:relative; e z-indez:1000;
+    */ 
+    display:grid;
+    grid-template-columns: auto;
+    background-color:hsl(0, 0%, 98%) ;
+    height: 650px;
+    width: 100%;
+ 
+    
+    /* Usei a propriedade acima para a imagem do celular não
+     ultrapassar o 'body'*/
+}
+.container_first_item_first{   
+     padding-top: 135px;
+    padding-left: 150px;
+}
+.container_first_item_first_one{
+    color:#303144;
+     width: 40%;
+     font-size: 3.2rem;
+}
+.container_first_item_first_two{
+    width: 38%;
+    color: hsl(233, 8%, 62%);
+    margin-top: 25px;
+    line-height: 30px;
+}
+.container_first{
+    background-image: url(../images/bg-intro-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 650px -265px; 
+}
+.container_first_img{
+    position: absolute;
+    left:58%;
+    top:-19%;
+    transform: translate(-2%,1%); 
+    /* left:1050px; */
+  /*  bottom: 555px; */
+  /* left:50%;
+  bottom:50%;
+transform: translate(-50%,50%);  */
+}
+.container_first_img img{
+      width: 697px;
+    height:879px;
+}
+.btn_container_first{
+    display: block;
+    background:linear-gradient(to right,hsl(136, 65%, 51%) 25%, hsl(192, 70%, 51%) 80%);
+    padding: 12px 30px 12px 30px;    
+    border-radius: 150px;
+    border:none;
+    color: white;
+    margin-top: 35px;
+}
+.btn_nav:hover, .btn_container_first:hover{
+    box-shadow: inset 1px 1px 60px rgba(255,255,255,0.7);
+}
+ /*   - Grayish Blue: hsl(233, 8%, 62%)
+ Cinza claro:
+- Light Grayish Blue: hsl(220, 16%, 96%)
+"Branco" escuro
+- Very Light Gray: hsl(0, 0%, 98%)
+- White: hsl(0, 0%, 100%)*/
+.container_second{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+       background-color: hsl(220, 16%, 96%);
+      
+}
+.container_second_item_first{
+    padding-top: 90px;
+    padding-left: 150px;
+}
+.container_second_item_first_one{
+    color:#303144;
+    font-size: 2rem;
+}
+.container_second_item_first_two{
+    color: hsl(233, 8%, 62%);
+    margin-top: 25px;
+    line-height: 30px;
+}
+.container_second_item_second{
+    padding-top: 75px;
+    padding-left: 10px;  
+    padding-right: 100px;
+}
+.container_second_item_second{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 23px;
+}
+.container_second_items p{ 
+    color: hsl(233, 8%, 62%);
+    font-size: 15px;
+    line-height: 24px;
+    object-fit: fill;
+}
+.container_second_items{
+    display: grid;
+    grid-template-rows: auto auto auto;   
+}
+/*Verificar a responsividade para ficar tordo ao diminuir a tela*/
+.container_second_span{
+   font-size: 22px;
+    color:#303144;
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
