@@ -10,8 +10,8 @@
 button:hover{
     cursor: pointer;
 }
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { margin-top:25px;font-size: 11px; text-align: center; color:hsl(233, 8%, 62%); }
+.attribution a { color: hsl(228, 45%, 44%); font-size: 13px;}
 body{
     background: hsl(220, 16%, 96%);
     width: 100%;    
@@ -45,12 +45,12 @@ nav{
     color: hsl(233, 8%, 62%);
   /*  background-color:hsl(136, 65%, 51%);*/
 }
-li a{
+.link_nav{
     text-decoration: none;
     color: hsl(233, 8%, 62%);
     position:relative;
 }
-li a::after{
+.link_nav::after{
     position:absolute;
     left: 0;
     bottom: -35px;
@@ -60,7 +60,7 @@ li a::after{
     background:linear-gradient(to right,hsl(136, 65%, 51%) 15%, hsl(192, 70%, 51%) 80%);   
   opacity: 0;
 }
-a:hover:after{
+.link_nav:hover:after{
 opacity: 1;
 }
 .btn_nav{
@@ -145,6 +145,7 @@ transform: translate(-50%,50%);  */
     grid-template-columns: auto;
     grid-template-rows: auto auto;
        background-color: hsl(220, 16%, 96%);
+       padding-bottom: 60px;
       
 }
 .container_second_item_first{
@@ -167,7 +168,8 @@ transform: translate(-50%,50%);  */
 }
 .container_second_item_second{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    /* grid-template-columns: auto auto auto auto; */
+     grid-template-columns: repeat(auto-fit, minmax(210px,1fr));
     gap: 23px;
 }
 .container_second_items p{ 
@@ -186,4 +188,142 @@ transform: translate(-50%,50%);  */
     color:#303144;
     padding-top: 30px;
     padding-bottom: 25px;
+}
+.container_third{
+    display: grid;
+    grid-template-columns: 100%;
+    background-color:hsl(0, 0%, 98%) ;
+    padding-bottom: 70px;
+    justify-content: center;
+    
+}
+.container_third_item_first_one{
+    padding-top: 70px;
+    color:#303144;
+    font-size: 2rem;
+    margin: 20px;
+    margin-bottom: 0;
+    padding-left: 150px;
+}
+.container_third_item_second{
+    padding-top: 40px;   
+    padding-right: 100px;
+    margin: 20px;
+    padding-left: 150px;
+    padding-right: 100px;
+}
+.container_third_item_second{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap:25px;
+    /*tirei o width 100% pois as colunas estavam ultrapassando o body já que o container_third está com grid-t-coluns: 100% e não auto*/
+}
+.container_third_items legend{
+    color: hsl(233, 8%, 62%);
+    font-size: 11px; 
+    padding-bottom: 10px; 
+    padding-top: 30px;
+}
+.container_third_items p{
+    color: hsl(233, 8%, 62%);
+    font-size: 13px;
+    line-height: 22px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.container_third_span{
+    font-size: 16px;
+    color:#303144;
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+.container_third_span:hover{
+    color: hsl(192, 70%, 51%);
+    cursor:pointer;
+}
+.container_third_img{
+   display: grid;
+   grid-template-columns: auto;
+   grid-auto-flow: row;    
+  }
+.container_third_items img{
+   width: 100%;
+   min-height: 185px;
+   border-radius: 5px 5px 0px 0px; 
+   object-fit: cover;
+   /*a primeira imagem estava maior que as outras, para recolver coloquei um height mínimo de 185px, mas isso destorcia a imagem
+   conforme a tela fosse diminuindo, para resolver este segundo problema coloquei object-fill:cover*/
+}
+.container_third_items{
+    background: white;
+}
+.margem{  
+    padding: 0px 20px 0px 20px;    
+}
+footer{
+    background-color: hsl(233, 26%, 24%);
+}
+.menu_footer_item a{
+    color:white;
+}
+.menu_footer_item a:hover{
+    color: hsl(136, 65%, 51%);
+    cursor: pointer;
+}
+footer{
+    display: grid;
+    grid-template-rows: auto auto;
+    padding: 38px;
+}
+.footer_container_first{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.footer_container_first_item_first{
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    gap:35px;
+}
+.footer_img_item{
+    padding-right: 10px;
+}
+.footer_img_item:hover{
+    filter: brightness(0) saturate(100%) invert(86%) sepia(66%) saturate(2967%) hue-rotate(59deg) brightness(86%) contrast(90%);   
+    cursor: pointer;
+}
+.footer_container_first_item_second {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.footer_container_first_item_second a{
+    font-size: 14px;
+}
+.menu_footer_item{
+    padding-bottom: 15px;
+}
+.footer_container_first_item_third{
+     display:grid;
+    grid-template-rows: auto ;
+    justify-content: center;
+    gap: 25px;
+}
+.footer_span{
+    font-size: 14px;
+    color:hsl(233, 8%, 62%);
+}
+.btn_footer{
+    
+    background:linear-gradient(to right,hsl(136, 65%, 51%) 25%, hsl(192, 70%, 51%) 80%);
+    padding: 12px 30px 12px 30px;    
+    border-radius: 150px;
+    border:none;
+    color: white;
+     max-width: 170px;
+     font-size: 15px;
+    margin: auto;
+    margin-right: 0;
+}
+.btn_footer:hover{
+    box-shadow: inset 1px 1px 60px rgba(255,255,255,0.7);
 }
