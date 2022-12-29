@@ -7,10 +7,19 @@
     font-family: 'Public Sans', sans-serif;
     font-size: 18px;   
 }
+.menu_abrir{
+    display: none;
+}
+.menu_fechar{
+    display: none;
+}
+.shadow{
+    display: none;
+}
 button:hover{
     cursor: pointer;
 }
-.attribution { margin-top:25px;font-size: 11px; text-align: center; color:hsl(233, 8%, 62%); }
+.attribution { margin-top:25px;font-size: 11px; text-align: center; color:hsl(233, 8%, 62%);}
 .attribution a { color: hsl(228, 45%, 44%); font-size: 13px;}
 body{
     background: hsl(220, 16%, 96%);
@@ -142,24 +151,36 @@ transform: translate(-50%,50%);  */
 - White: hsl(0, 0%, 100%)*/
 .container_second{
     display: grid;
-    grid-template-columns: auto;
+     grid-template-columns: 100%;
     grid-template-rows: auto auto;
        background-color: hsl(220, 16%, 96%);
        padding-bottom: 60px;
-      
+       justify-content: center;            
 }
 .container_second_item_first{
-    padding-top: 90px;
-    padding-left: 150px;
+    width: 100%;
+    margin: auto;
+    /* padding-top: 90px;
+    padding-left: 150px; */
 }
 .container_second_item_first_one{
     color:#303144;
     font-size: 2rem;
+    /*Abaixo segui o exemplo do container_third_item_first_one para alinhar os parágrafos */
+    margin: 20px;
+    margin-bottom: 0;
+    padding-left: 150px;
+    padding-top: 35px;
 }
 .container_second_item_first_two{
     color: hsl(233, 8%, 62%);
     margin-top: 25px;
     line-height: 30px;
+    /*Abaixo segui o exemplo do container_third_item_first_one */
+    margin: 20px;
+    margin-bottom: 0;
+    padding-left: 150px;
+   
 }
 .container_second_item_second{
     padding-top: 75px;
@@ -169,8 +190,12 @@ transform: translate(-50%,50%);  */
 .container_second_item_second{
     display: grid;
     /* grid-template-columns: auto auto auto auto; */
-     grid-template-columns: repeat(auto-fit, minmax(210px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
     gap: 23px;
+    /*Abaixo segui o exemplo do container_third_item_first_one */
+    margin: 20px;
+    margin-bottom: 0;
+    padding-left: 150px;
 }
 .container_second_items p{ 
     color: hsl(233, 8%, 62%);
@@ -262,6 +287,7 @@ transform: translate(-50%,50%);  */
 }
 footer{
     background-color: hsl(233, 26%, 24%);
+    
 }
 .menu_footer_item a{
     color:white;
@@ -274,6 +300,7 @@ footer{
     display: grid;
     grid-template-rows: auto auto;
     padding: 38px;
+    padding-bottom: 18px;
 }
 .footer_container_first{
     display: grid;
@@ -312,8 +339,7 @@ footer{
     font-size: 14px;
     color:hsl(233, 8%, 62%);
 }
-.btn_footer{
-    
+.btn_footer{    
     background:linear-gradient(to right,hsl(136, 65%, 51%) 25%, hsl(192, 70%, 51%) 80%);
     padding: 12px 30px 12px 30px;    
     border-radius: 150px;
@@ -326,4 +352,153 @@ footer{
 }
 .btn_footer:hover{
     box-shadow: inset 1px 1px 60px rgba(255,255,255,0.7);
+}
+
+@media (max-width:860px){
+.link_nav{
+ font-size:16px;
+}
+.btn_nav{
+    font-size:16px;
+}
+.logo{
+    padding-left: 10px;
+}
+}
+@media (max-width:800px){
+    .link_nav{
+     font-size:14px;
+    }
+    .btn_nav{
+        font-size:14px;
+    }
+    .logo{
+        padding-left: 15px;
+    }
+    }
+    @media (max-width:750px){
+        .menu_fechar{
+           display:inline-block;
+            background-image: url(../images/icon-close.svg);
+            background-repeat:no-repeat;
+            background-position:15px center;
+            padding:2px 35px;/*sem o padding o menu e o texto some com o text-ident*/
+            text-indent:-9999px;
+        }
+       /* .logo{
+        margin-left: 20px;    
+       } */
+        .btn_nav{
+            display: none;
+        }
+        .link_nav{
+            color:#303144;
+        }
+        .menu li{
+            text-align: center;
+            padding: 10px;
+        }
+        .menu{
+            position: absolute;
+           grid-template-columns: auto;
+           background-color: white;
+           justify-content: center;
+           width: 90%;
+           margin: 20px;
+           margin-top: 65px;
+           top:10px;
+           border-radius: 8px;          
+        }
+        .shadow{
+            position: absolute;
+            display: block;
+            background-color: black;
+            width: 100%;
+            top: -20px;
+            height: 100vh;
+            z-index: -2;
+            opacity: 0.3;
+        }
+        nav{
+           position: relative;
+          display: grid;
+          grid-template-columns: auto auto;
+          justify-content:space-between;
+         /* justify-content:start;para a logo iniciar rente (a esquerda) ao menu*/
+        }
+        
+    @media (max-width:790px){
+    .container_first{
+        position: relative;
+        /* position: absolute; 
+        Isto estava atrapalhando o .container_second
+        que estava ficando abaixo do header após eu colocar
+        o menu com position:relative; e z-indez:1000;
+        */ 
+        display:grid;
+        grid-template-columns: auto;
+        background-color:hsl(0, 0%, 98%) ;       
+    }
+    .container_first_item_first{   
+      padding: 52px;
+   }
+    .container_first_item_first_one{
+        width: 100%;
+        text-align: center;
+}
+    .container_first_item_first_two{
+        width: 100%;  
+        text-align: center;          
+    }
+    .btn_container_first{
+         margin:auto;
+         margin-top: 25px;
+    }
+    
+    /* .container_first{
+        position: absolute;
+    } */
+    .container_second_item_first_one, .container_second_item_first_two{
+        text-align: center;
+    }
+    .container_second_item_first_one{
+      padding-top: 25px;
+      padding-left: 0px;
+    }
+    .container_second_item_first_two{
+        padding-left: 0px;
+      }
+    /* .container_second_item_first{
+       padding-left: 0;
+    } */
+    .container_second_item_second{
+        justify-content: center;
+        text-align: center;
+       }
+     .container_second_items img{
+      margin: auto;
+        padding-bottom: 5px
+        
+       }
+    .footer_container_first{
+      grid-template-columns: auto;
+    } 
+    .container_third_item_first_one{
+        text-align: center;
+        padding-left: 0;
+        width: 100%;
+      
+    }    .footer_container_first_item_second {
+              grid-template-columns:  auto;
+              justify-content: center;
+              text-align: center;
+              margin-top: 20px;
+              margin-bottom: 20px;
+    }
+    .btn_footer{  
+        margin: auto;
+    }
+}
+@media (max-width:500px){
+
 }
