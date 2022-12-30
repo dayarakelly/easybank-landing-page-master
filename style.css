@@ -597,6 +597,13 @@ footer {
     }
 
     @media (max-width:555px) {
+        .container_first {
+            background-image: url(../images/bg-intro-mobile.svg);
+            background-repeat: no-repeat;
+            background-position: 0px 0px;
+            background-size: 100% 60%;
+            overflow: hidden;
+        }
         nav {
             grid-template-columns: auto auto;
             justify-content: space-between;
@@ -679,14 +686,7 @@ footer {
         .container_first_item_first_two {
             width: 100%;
             text-align: center;
-        }
-
-        .container_first {
-            background-image: url(../images/bg-intro-mobile.svg);
-            background-repeat: no-repeat;
-            background-position: 0px 0px;
-            background-size: 100% 60%;
-        }
+        }       
 
         .container_first_img img {
             width: 492px;
