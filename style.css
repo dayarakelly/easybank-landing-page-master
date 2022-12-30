@@ -45,6 +45,9 @@ body {
     width: 100%;
     overflow-x: hidden;
 }
+/* .container_first{
+    overflow-x:auto;
+} */
 
 header {
     position: relative;
@@ -62,6 +65,7 @@ nav {
     align-items: center;
     padding: 15px 0px 15px 0px;
     background: hsl(0, 0%, 100%);
+   
 }
 
 .logo {
@@ -72,8 +76,7 @@ nav {
 .menu {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-
-}
+   }
 
 .menu li {
     padding: 20px;
@@ -107,6 +110,7 @@ nav {
     border-radius: 150px;
     border: none;
     color: white;
+    
 }
 
 .container_first {
@@ -258,7 +262,7 @@ nav {
     padding-top: 70px;
     color: #303144;
     font-size: 2rem;
-    margin: 20px;
+    margin: 0;
     margin-bottom: 0;
     padding-left: 150px;
 }
@@ -565,6 +569,7 @@ footer {
 
         .container_first_item_first_one {
             font-size: 2.9rem;
+            margin: 0;
         }
     }
 
@@ -684,8 +689,8 @@ footer {
         }
 
         .container_first_img img {
-            width: 497px;
-            height: 679px;
+            width: 492px;
+            height: 674px;
         }
 
         .container_first_img {
@@ -708,7 +713,7 @@ footer {
             opacity: 0.3;
             /* opacity:0;
         transition: opacity 10ms;  */
-            transform: translateX(190%);
+            transform: translateX(10%);
             transition: transform 200ms;
         }
 
