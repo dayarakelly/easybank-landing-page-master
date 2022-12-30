@@ -17,24 +17,24 @@
 <body>
   <header>
     <nav id="nav">
-      
+
       <img src="images/logo.svg" class="logo">
-      <a  class="close" href="">SAIR</a>
-      <ul id="menu" class="menu">
-       
+      <a id="close" href="">SAIR</a>
+      <ul id="menu" class="menu menu_open">
+
         <li class="menu_item menu_item_um"><a class="link_nav" href="#nav">Home</a></li>
-        <li class="menu_item menu_item_dois"><a class="link_nav" href="#container_first">About</a></li>
-        <li class="menu_item menu_item_tres"><a class="link_nav" href="#">Contact</a></li>
-        <li class="menu_item menu_item_quatro"><a class="link_nav" href="#">Blog</a></li>
+        <li class="menu_item menu_item_dois"><a class="link_nav" href="#container_second">About</a></li>
+        <li class="menu_item menu_item_tres"><a class="link_nav" href="#contact">Contact</a></li>
+        <li class="menu_item menu_item_quatro"><a class="link_nav" href="#container_third">Blog</a></li>
         <li class="menu_item menu_item_cinco"><a class="link_nav" href="#">Careers</a></li>
       </ul>
-      <div class="shadow">SOMBRA</div>
-      <a href="#menu" class="menu_abrir">Menu</a>
+      <div id="shadow" class="no_shadow"></div>
+      <a id="menu_sandwich" class="menu_abrir">Menu</a>
       <button class="btn_nav"> Request Invite</button>
     </nav>
   </header>
 
-<!-- CONTAINER FIRST-->
+  <!-- CONTAINER FIRST-->
   <section class="container_first" id="container_first">
     <div class="container_first_item_first">
       <div class="container_first_item_first_one">
@@ -54,7 +54,7 @@
 
   </section>
   <!-- CONTAINER SECOND-->
-  <section class="container_second">
+  <section class="container_second" id="container_second">
 
     <div class="container_second_item_first">
       <div class="container_second_item_first_one">
@@ -98,7 +98,7 @@
       </div>
   </section>
   <!-- CONTAINER THIRD-->
-  <section class="container_third">
+  <section class="container_third" id="container_third">
 
     <div class="container_third_item_first">
       <div class="container_third_item_first_one">
@@ -159,40 +159,41 @@
   <footer>
     <section class="footer_container_first">
 
-    <div class="footer_container_first_item_first">
-      <img src="images/logo-white.svg">
-      <div class="footer_img">
-        <img class="footer_img_item" src="images/icon-facebook.svg">
-        <img class="footer_img_item" src="images/icon-youtube.svg">
-        <img class="footer_img_item" src="images/icon-twitter.svg">
-        <img class="footer_img_item" src="images/icon-pinterest.svg">
-        <img class="footer_img_item" src="images/icon-instagram.svg">
+      <div class="footer_container_first_item_first">
+        <img src="images/logo-white.svg">
+        <div class="footer_img" id="contact">
+          <img class="footer_img_item" src="images/icon-facebook.svg">
+          <img class="footer_img_item" src="images/icon-youtube.svg">
+          <img class="footer_img_item" src="images/icon-twitter.svg">
+          <img class="footer_img_item" src="images/icon-pinterest.svg">
+          <img class="footer_img_item" src="images/icon-instagram.svg">
+        </div>
       </div>
-    </div>
 
-    <ul class="footer_container_first_item_second">
-      <li class="menu_footer_item"><a class="link_menu_footer">About Us</a> </li>
-      <li class="menu_footer_item"><a class="link_menu_footer">Careers</a></li>
-      <li class="menu_footer_item"><a class="link_menu_footer">Contact</a></li>
-      <li class="menu_footer_item"><a class="link_menu_footer">Support</a></li>
-      <li class="menu_footer_item"><a class="link_menu_footer">Blog</a></li>
-          
-      <li class="menu_footer_item"><a class="link_menu_footer">Privacy Policy</a> </li>
-    </ul>
+      <ul class="footer_container_first_item_second">
+        <li class="menu_footer_item"><a class="link_menu_footer">About Us</a> </li>
+        <li class="menu_footer_item"><a class="link_menu_footer">Careers</a></li>
+        <li class="menu_footer_item"><a class="link_menu_footer">Contact</a></li>
+        <li class="menu_footer_item"><a class="link_menu_footer">Support</a></li>
+        <li class="menu_footer_item"><a class="link_menu_footer">Blog</a></li>
 
-    <div class="footer_container_first_item_third">
-      <button class="btn_footer">Request Invite</button>
-      <p class="footer_span">© Easybank. All Rights Reserved</p>
-    </div>
+        <li class="menu_footer_item"><a class="link_menu_footer">Privacy Policy</a> </li>
+      </ul>
+
+      <div class="footer_container_first_item_third">
+        <button class="btn_footer">Request Invite</button>
+        <p class="footer_span">© Easybank. All Rights Reserved</p>
+      </div>
     </section>
 
     <section class="footer_container_second">
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="https://github.com/dayarakelly" target="_blank">Dayara Kelly</a>.
-    </div>
-  </section>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/dayarakelly" target="_blank">Dayara Kelly</a>.
+      </div>
+    </section>
   </footer>
+  <script src="script/script.js"></script>
 </body>
 
 </html>

@@ -1,37 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
-*{
+
+* {
     padding: 0%;
     margin: 0%;
-    /* box-sizing: border-box; */
     list-style: none;
     font-family: 'Public Sans', sans-serif;
-    font-size: 18px;   
+    font-size: 18px;
 }
-.menu_abrir{
+
+.menu_abrir {
     display: none;
 }
-.close{
+
+#close {
     display: none;
 }
-.shadow{
+
+.no_shadow {
     display: none;
 }
-button:hover{
+
+.menu_fechar {
+    display: none;
+}
+
+button:hover {
     cursor: pointer;
 }
-.attribution { margin-top:25px;font-size: 11px; text-align: center; color:hsl(233, 8%, 62%);}
-.attribution a { color: hsl(228, 45%, 44%); font-size: 13px;}
-body{
+
+.attribution {
+    margin-top: 25px;
+    font-size: 11px;
+    text-align: center;
+    color: hsl(233, 8%, 62%);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    font-size: 13px;
+}
+
+body {
     background: hsl(220, 16%, 96%);
-    width: 100%;    
+    width: 100%;
     overflow-x: hidden;
 }
-header{
+
+header {
     position: relative;
     z-index: 1000;
-   
 }
-nav{
+
+a:hover {
+    cursor: pointer;
+}
+
+nav {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -39,132 +63,134 @@ nav{
     padding: 15px 0px 15px 0px;
     background: hsl(0, 0%, 100%);
 }
-.logo{
+
+.logo {
     width: 139px;
     height: 20px;
 }
-.menu{
-    /* display: flex;
-    justify-content: space-around; */
+
+.menu {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
+
 }
-.menu li{
+
+.menu li {
     padding: 20px;
     color: hsl(233, 8%, 62%);
-  /*  background-color:hsl(136, 65%, 51%);*/
 }
-.link_nav{
+
+.link_nav {
     text-decoration: none;
     color: hsl(233, 8%, 62%);
-    position:relative;
+    position: relative;
 }
-.link_nav::after{
-    position:absolute;
+
+.link_nav::after {
+    position: absolute;
     left: 0;
     bottom: -35px;
     width: 100%;
     content: "";
     height: 4px;
-    background:linear-gradient(to right,hsl(136, 65%, 51%) 15%, hsl(192, 70%, 51%) 80%);   
-  opacity: 0;
+    background: linear-gradient(to right, hsl(136, 65%, 51%) 15%, hsl(192, 70%, 51%) 80%);
+    opacity: 0;
 }
-.link_nav:hover:after{
-opacity: 1;
+
+.link_nav:hover:after {
+    opacity: 1;
 }
-.btn_nav{
-    background:linear-gradient(to right,hsl(136, 65%, 51%) 10%, hsl(192, 70%, 51%) 80%);
-    padding: 12px 30px 12px 30px;    
+
+.btn_nav {
+    background: linear-gradient(to right, hsl(136, 65%, 51%) 10%, hsl(192, 70%, 51%) 80%);
+    padding: 12px 30px 12px 30px;
     border-radius: 150px;
-    border:none;
+    border: none;
     color: white;
 }
-.container_first{
+
+.container_first {
     position: relative;
     /* position: absolute; 
     Isto estava atrapalhando o .container_second
     que estava ficando abaixo do header após eu colocar
     o menu com position:relative; e z-indez:1000;
-    */ 
-    display:grid;
+    */
+    display: grid;
     grid-template-columns: auto;
-    background-color:hsl(0, 0%, 98%) ;
+    background-color: hsl(0, 0%, 98%);
     height: 650px;
     width: 100%;
- 
-    
     /* Usei a propriedade acima para a imagem do celular não
      ultrapassar o 'body'*/
 }
-.container_first_item_first{   
-     padding-top: 135px;
+
+.container_first_item_first {
+    padding-top: 135px;
     padding-left: 150px;
 }
-.container_first_item_first_one{
-    color:#303144;
-     width: 40%;
-     font-size: 3.2rem;
+
+.container_first_item_first_one {
+    color: #303144;
+    width: 40%;
+    font-size: 3.2rem;
 }
-.container_first_item_first_two{
+
+.container_first_item_first_two {
     width: 38%;
     color: hsl(233, 8%, 62%);
     margin-top: 25px;
     line-height: 30px;
 }
-.container_first{
+
+.container_first {
     background-image: url(../images/bg-intro-desktop.svg);
     background-repeat: no-repeat;
-    background-position: 650px -265px; 
+    background-position: 650px -265px;
 }
-.container_first_img{
+
+.container_first_img {
     position: absolute;
-    left:58%;
-    top:-19%;
-    transform: translate(-2%,1%); 
-    /* left:1050px; */
-  /*  bottom: 555px; */
-  /* left:50%;
-  bottom:50%;
-transform: translate(-50%,50%);  */
+    left: 58%;
+    top: -19%;
+    transform: translate(-2%, 1%); 
 }
-.container_first_img img{
-      width: 697px;
-    height:879px;
+
+.container_first_img img {
+    width: 697px;
+    height: 879px;
 }
-.btn_container_first{
+
+.btn_container_first {
     display: block;
-    background:linear-gradient(to right,hsl(136, 65%, 51%) 25%, hsl(192, 70%, 51%) 80%);
-    padding: 12px 30px 12px 30px;    
+    background: linear-gradient(to right, hsl(136, 65%, 51%) 25%, hsl(192, 70%, 51%) 80%);
+    padding: 12px 30px 12px 30px;
     border-radius: 150px;
-    border:none;
+    border: none;
     color: white;
     margin-top: 35px;
 }
-.btn_nav:hover, .btn_container_first:hover{
-    box-shadow: inset 1px 1px 60px rgba(255,255,255,0.7);
+
+.btn_nav:hover,
+.btn_container_first:hover {
+    box-shadow: inset 1px 1px 60px rgba(255, 255, 255, 0.7);
 }
- /*   - Grayish Blue: hsl(233, 8%, 62%)
- Cinza claro:
-- Light Grayish Blue: hsl(220, 16%, 96%)
-"Branco" escuro
-- Very Light Gray: hsl(0, 0%, 98%)
-- White: hsl(0, 0%, 100%)*/
-.container_second{
+.container_second {
     display: grid;
-     grid-template-columns: 100%;
+    grid-template-columns: 100%;
     grid-template-rows: auto auto;
-       background-color: hsl(220, 16%, 96%);
-       padding-bottom: 60px;
-       justify-content: center;            
+    background-color: hsl(220, 16%, 96%);
+    padding-bottom: 60px;
+    justify-content: center;
 }
-.container_second_item_first{
+
+.container_second_item_first {
     width: 100%;
     margin: auto;
-    /* padding-top: 90px;
-    padding-left: 150px; */
 }
-.container_second_item_first_one{
-    color:#303144;
+
+.container_second_item_first_one {
+    color: #303144;
     font-size: 2rem;
     /*Abaixo segui o exemplo do container_third_item_first_one para alinhar os parágrafos */
     margin: 20px;
@@ -172,7 +198,8 @@ transform: translate(-50%,50%);  */
     padding-left: 150px;
     padding-top: 35px;
 }
-.container_second_item_first_two{
+
+.container_second_item_first_two {
     color: hsl(233, 8%, 62%);
     margin-top: 25px;
     line-height: 30px;
@@ -180,437 +207,533 @@ transform: translate(-50%,50%);  */
     margin: 20px;
     margin-bottom: 0;
     padding-left: 150px;
-   
+
 }
-.container_second_item_second{
+
+.container_second_item_second {
     padding-top: 75px;
-    padding-left: 10px;  
+    padding-left: 10px;
     padding-right: 100px;
 }
-.container_second_item_second{
+
+.container_second_item_second {
     display: grid;
-    /* grid-template-columns: auto auto auto auto; */
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 23px;
     /*Abaixo segui o exemplo do container_third_item_first_one */
     margin: 20px;
     margin-bottom: 0;
     padding-left: 150px;
 }
-.container_second_items p{ 
+
+.container_second_items p {
     color: hsl(233, 8%, 62%);
     font-size: 15px;
     line-height: 24px;
     object-fit: fill;
 }
-.container_second_items{
+
+.container_second_items {
     display: grid;
-    grid-template-rows: auto auto auto;   
+    grid-template-rows: auto auto auto;
 }
-/*Verificar a responsividade para ficar tordo ao diminuir a tela*/
-.container_second_span{
-   font-size: 22px;
-    color:#303144;
+
+.container_second_span {
+    font-size: 22px;
+    color: #303144;
     padding-top: 30px;
     padding-bottom: 25px;
 }
-.container_third{
+
+.container_third {
     display: grid;
     grid-template-columns: 100%;
-    background-color:hsl(0, 0%, 98%) ;
+    background-color: hsl(0, 0%, 98%);
     padding-bottom: 70px;
     justify-content: center;
-    
+
 }
-.container_third_item_first_one{
+
+.container_third_item_first_one {
     padding-top: 70px;
-    color:#303144;
+    color: #303144;
     font-size: 2rem;
     margin: 20px;
     margin-bottom: 0;
     padding-left: 150px;
 }
-.container_third_item_second{
-    padding-top: 40px;   
+
+.container_third_item_second {
+    padding-top: 40px;
     padding-right: 100px;
     margin: 20px;
     padding-left: 150px;
     padding-right: 100px;
 }
-.container_third_item_second{
+
+.container_third_item_second {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-    gap:25px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
     /*tirei o width 100% pois as colunas estavam ultrapassando o body já que o container_third está com grid-t-coluns: 100% e não auto*/
 }
-.container_third_items legend{
+
+.container_third_items legend {
     color: hsl(233, 8%, 62%);
-    font-size: 11px; 
-    padding-bottom: 10px; 
+    font-size: 11px;
+    padding-bottom: 10px;
     padding-top: 30px;
 }
-.container_third_items p{
+
+.container_third_items p {
     color: hsl(233, 8%, 62%);
     font-size: 13px;
     line-height: 22px;
     padding-top: 10px;
     padding-bottom: 20px;
 }
-.container_third_span{
+
+.container_third_span {
     font-size: 16px;
-    color:#303144;
+    color: #303144;
     padding-top: 30px;
     padding-bottom: 25px;
 }
-.container_third_span:hover{
+
+.container_third_span:hover {
     color: hsl(192, 70%, 51%);
-    cursor:pointer;
+    cursor: pointer;
 }
-.container_third_img{
-   display: grid;
-   grid-template-columns: auto;
-   grid-auto-flow: row;    
-  }
-.container_third_items img{
-   width: 100%;
-   min-height: 185px;
-   border-radius: 5px 5px 0px 0px; 
-   object-fit: cover;
-   /*a primeira imagem estava maior que as outras, para recolver coloquei um height mínimo de 185px, mas isso destorcia a imagem
+
+.container_third_img {
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-flow: row;
+}
+
+.container_third_items img {
+    width: 100%;
+    min-height: 185px;
+    border-radius: 5px 5px 0px 0px;
+    object-fit: cover;
+    /*a primeira imagem estava maior que as outras, para recolver coloquei um height mínimo de 185px, mas isso destorcia a imagem
    conforme a tela fosse diminuindo, para resolver este segundo problema coloquei object-fill:cover*/
 }
-.container_third_items{
+
+.container_third_items {
     background: white;
 }
-.margem{  
-    padding: 0px 20px 0px 20px;    
+
+.margem {
+    padding: 0px 20px 0px 20px;
 }
-footer{
+
+footer {
     background-color: hsl(233, 26%, 24%);
-    
 }
-.menu_footer_item a{
-    color:white;
+
+.menu_footer_item a {
+    color: white;
 }
-.menu_footer_item a:hover{
+
+.menu_footer_item a:hover {
     color: hsl(136, 65%, 51%);
     cursor: pointer;
 }
-footer{
+
+footer {
     display: grid;
     grid-template-rows: auto auto;
     padding: 38px;
     padding-bottom: 18px;
 }
-.footer_container_first{
+
+.footer_container_first {
     display: grid;
     grid-template-columns: auto auto auto;
 }
-.footer_container_first_item_first{
+
+.footer_container_first_item_first {
     display: grid;
     grid-template-rows: auto auto;
     justify-content: center;
-    gap:35px;
+    gap: 35px;
 }
-.footer_img_item{
+
+.footer_img_item {
     padding-right: 10px;
 }
-.footer_img_item:hover{
-    filter: brightness(0) saturate(100%) invert(86%) sepia(66%) saturate(2967%) hue-rotate(59deg) brightness(86%) contrast(90%);   
+
+.footer_img_item:hover {
+    filter: brightness(0) saturate(100%) invert(86%) sepia(66%) saturate(2967%) hue-rotate(59deg) brightness(86%) contrast(90%);
     cursor: pointer;
 }
+
 .footer_container_first_item_second {
     display: grid;
     grid-template-columns: auto auto;
 }
-.footer_container_first_item_second a{
+
+.footer_container_first_item_second a {
     font-size: 14px;
 }
-.menu_footer_item{
+
+.menu_footer_item {
     padding-bottom: 15px;
 }
-.footer_container_first_item_third{
-     display:grid;
-    grid-template-rows: auto ;
+
+.footer_container_first_item_third {
+    display: grid;
+    grid-template-rows: auto;
     justify-content: center;
     gap: 25px;
 }
-.footer_span{
+
+.footer_span {
     font-size: 14px;
-    color:hsl(233, 8%, 62%);
+    color: hsl(233, 8%, 62%);
 }
-.btn_footer{    
-    background:linear-gradient(to right,hsl(136, 65%, 51%) 25%, hsl(192, 70%, 51%) 80%);
-    padding: 12px 30px 12px 30px;    
+
+.btn_footer {
+    background: linear-gradient(to right, hsl(136, 65%, 51%) 25%, hsl(192, 70%, 51%) 80%);
+    padding: 12px 30px 12px 30px;
     border-radius: 150px;
-    border:none;
+    border: none;
     color: white;
-     max-width: 170px;
-     font-size: 15px;
+    max-width: 170px;
+    font-size: 15px;
     margin: auto;
     margin-right: 0;
 }
-.btn_footer:hover{
-    box-shadow: inset 1px 1px 60px rgba(255,255,255,0.7);
+
+.btn_footer:hover {
+    box-shadow: inset 1px 1px 60px rgba(255, 255, 255, 0.7);
 }
 
-@media (max-width:1000px){
-    .container_first_item_first{   
+@media (max-width:1000px) {
+    .container_first_item_first {
         padding-top: 100px;
-   }
+    }
 }
-@media (max-width:860px){
-    .container_first_item_first{   
+
+@media (max-width:860px) {
+    .container_first_item_first {
         padding-top: 80px;
-   }
-.link_nav{
- font-size:16px;
-}
-.btn_nav{
-    font-size:16px;
-}
-.logo{
-    padding-left: 10px;
-}
-}
-@media (max-width:800px){
-    .link_nav{
-     font-size:14px;
     }
-    .btn_nav{
-        font-size:14px;
+
+    .link_nav {
+        font-size: 16px;
     }
-    .logo{
+
+    .btn_nav {
+        font-size: 16px;
+    }
+
+    .logo {
+        padding-left: 10px;
+    }
+}
+
+@media (max-width:800px) {
+    .link_nav {
+        font-size: 14px;
+    }
+
+    .btn_nav {
+        font-size: 14px;
+    }
+
+    .logo {
         padding-left: 15px;
     }
+}
+
+@media (max-width:750px) {
+
+    .btn_nav {
+        padding: 12px 20px 12px 20px;
+        font-size: 13px;
     }
-    @media (max-width:750px){
-       /* .menu_fechar{
-           display:inline-block;
-            background-image: url(../images/icon-close.svg);
-            background-repeat:no-repeat;
-            background-position:15px center;
-            padding:2px 35px;/*sem o padding o menu e o texto some com o text-ident*/
-           /* text-indent:-9999px;
-        }*/
-        .menu_abrir{
+
+    .link_nav {
+        color: #303144;
+    }
+
+    .link_nav::after {
+        bottom: -10px;
+    }
+
+    .menu li {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .menu_item_cinco {
+        padding-bottom: 5px;
+    }
+
+    nav {
+        position: relative;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-around;
+        /* justify-content:start;para a logo iniciar rente (a esquerda) ao menu*/
+    }
+
+    @media (max-width:790px) {
+
+        .container_first_img img {
+            width: 657px;
+            height: 839px;
+        }
+
+        .container_first_item_first {
+            padding-top: 60px;
+        }
+
+        .container_first_item_first {
+            padding: 52px;
+        }
+
+        .btn_container_first {
+            margin: auto;
+            margin-top: 25px;
+        }
+
+        .container_second_item_first_one,
+        .container_second_item_first_two {
+            text-align: center;
+        }
+
+        .container_second_item_first_one {
+            padding-top: 25px;
+            padding-left: 0px;
+        }
+
+        .container_second_item_first_two {
+            padding-left: 0px;
+        }
+
+        .container_second_item_second {
+            justify-content: center;
+            text-align: center;
+        }
+
+        .container_second_items img {
+            margin: auto;
+            padding-bottom: 5px
+        }
+
+        .footer_container_first {
+            grid-template-columns: auto;
+        }
+
+        .container_third_item_first_one {
+            text-align: center;
+            padding-left: 0;
+            width: 100%;
+        }
+
+        .footer_container_first_item_second {
+            grid-template-columns: auto;
+            justify-content: center;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .btn_footer {
+            margin: auto;
+        }
+    }
+
+    @media (max-width:610px) {
+        .btn_nav {
+            padding: 12px 15px 12px 15px;
+            font-size: 12px;
+            margin-right: 3px;
+        }
+
+        .logo {
+            padding-right: 3px;
+        }
+
+        .menu li {
+            padding: 17px 10px 17px 10px;
+            color: hsl(233, 8%, 62%);
+        }
+
+        .container_first_item_first_one {
+            font-size: 2.9rem;
+        }
+    }
+
+    @media (max-width:610px) {
+        .btn_nav {
+            padding: 12px 15px 12px 15px;
+            font-size: 12px;
+        }
+    }
+
+    @media (max-width:580px) {
+
+        .container_first_item_first_one {
+            font-size: 2.8rem;
+        }
+
+        .container_first_img img {
+            width: 635px;
+            height: 817px;
+        }
+
+        .btn_container_first {
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width:555px) {
+        nav {
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+            /* justify-content:start;para a logo iniciar rente (a esquerda) ao menu*/
+        }
+
+        .menu_abrir {
             display: block;
             background-image: url(../images/menu.png);
-            background-repeat:no-repeat;
-            background-position:15px center;
-            padding:2px 35px;/*sem o padding o menu e o texto some com o text-ident*/
-            text-indent:-9999px;
+            background-repeat: no-repeat;
+            background-position: 15px center;
+            padding: 2px 35px;
+            /*sem o padding o menu e o texto some com o text-ident*/
+            text-indent: -9999px;
         }
-       /* .logo{
-        margin-left: 20px;    
-       } */
-        .btn_nav{
-            display: none;
-        }
-        .link_nav{
-            color:#303144;
-        }
-        .link_nav::after{
-         bottom: -10px;
-        }
-        .menu li{
-            text-align: center;
-            padding: 10px;
-        }
-        
-        /* .menu{
-            display: none;
-            position: absolute;
-           grid-template-columns: auto;
-           background-color: white;
-           justify-content: center;
-           width: 90%;
-           margin: 20px;
-           margin-top: 65px;
-           top:10px;
-           border-radius: 8px; 
-           padding-bottom: 8px;         
-        } */
-        .menu_item_cinco{
-            padding-bottom: 5px;
-        }
-        
-        
-        nav{
-           position: relative;
-          display: grid;
-          grid-template-columns: auto auto;
-          justify-content:space-between;
-         /* justify-content:start;para a logo iniciar rente (a esquerda) ao menu*/
-        }
-      
-    @media (max-width:790px){
-        .container_first_img img{
-            width: 657px;
-          height:839px;
-      }
-        .container_first_item_first{   
-            padding-top: 60px;
-       }
-  
-    /* .container_first{
-        position: relative;
-        /* position: absolute; 
-        Isto estava atrapalhando o .container_second
-        que estava ficando abaixo do header após eu colocar
-        o menu com position:relative; e z-indez:1000;
-        */ 
-       /* display:grid;
-        grid-template-columns: auto;
-        background-color:hsl(0, 0%, 98%) ; 
-        background-color: blueviolet;      
-    } */
-    .container_first_item_first{   
-      padding: 52px;
-   }
-    /* .container_first_item_first_one{
-        width: 100%;
-        text-align: center;
-} */
-    /* .container_first_item_first_two{
-        width: 100%;  
-        text-align: center;          
-    } */
-    .btn_container_first{
-         margin:auto;
-         margin-top: 25px;
-    }
-    
-    /* .container_first{
-        position: absolute;
-    } */
-    .container_second_item_first_one, .container_second_item_first_two{
-        text-align: center;
-    }
-    .container_second_item_first_one{
-      padding-top: 25px;
-      padding-left: 0px;
-    }
-    .container_second_item_first_two{
-        padding-left: 0px;
-      }
-    /* .container_second_item_first{
-       padding-left: 0;
-    } */
-    .container_second_item_second{
-        justify-content: center;
-        text-align: center;
-       }
-     .container_second_items img{
-      margin: auto;
-        padding-bottom: 5px
-        
-       }
-    .footer_container_first{
-      grid-template-columns: auto;
-    } 
-    .container_third_item_first_one{
-        text-align: center;
-        padding-left: 0;
-        width: 100%;
-      
-    }    .footer_container_first_item_second {
-              grid-template-columns:  auto;
-              justify-content: center;
-              text-align: center;
-              margin-top: 20px;
-              margin-bottom: 20px;
-    }
-    .btn_footer{  
-        margin: auto;
-    }
-}
-@media (max-width:610px){
-    .container_first_item_first_one{
-            font-size: 2.9rem;
-    } 
-}
-@media (max-width:580px){
-    .container_first_item_first_one{
-        font-size: 2.8rem;
-}
-    .container_first_img img{
-        width: 635px;
-      height:817px;
-  }
-  .btn_container_first{
-    font-size: 16px;
-  }
-}
-@media (max-width:545px){
-      .menu{
-            display: none;
-            position: absolute;
-           grid-template-columns: auto;
-           background-color: white;
-           justify-content: center;
-           width: 90%;
-           margin: 20px;
-           margin-top: 65px;
-           top:10px;
-           border-radius: 8px; 
-           padding-bottom: 8px;         
-        }
-    .container_first{
-        /* bg-intro-mobile
-        image-mockups */
-        position: relative;
-        /* position: absolute; 
-        Isto estava atrapalhando o .container_second
-        que estava ficando abaixo do header após eu colocar
-        o menu com position:relative; e z-indez:1000;
-        */ 
-      display:grid;
-        grid-template-columns: auto;
-        background-color:hsl(0, 0%, 98%) ; 
-        height: 100%;
-             
-    } 
-   .container_first_item_first{
-    margin-top: 500px;
 
+        .menu_fechar {
+            display: inline-block;
+            background-image: url(../images/icon-close.svg);
+            background-repeat: no-repeat;
+            background-position: 15px center;
+            padding: 2px 35px;
+            /*sem o padding o menu e o texto somem com o text-ident*/
+            text-indent: -9999px;
+        }
+
+        .btn_nav {
+            display: none;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .menu_open {
+            display: block;
+            position: absolute;
+            grid-template-columns: auto;
+            background-color: white;
+            justify-content: center;
+            width: 90%;
+            margin: 20px;
+            margin-top: 65px;
+            top: 10px;
+            border-radius: 8px;
+            padding-bottom: 8px;
+            /* opacity:0;
+            transition: opacity 400ms;  */
+            transform: translateX(190%);
+            transition: transform 550ms;
+        }
+
+        .move_menu {
+            transform: translateX(0);
+            /* opacity:1;  */
+        }
+
+
+        .container_first {
+            position: relative;
+            /* position: absolute;
+             Isto estava atrapalhando o .container_secondque estava ficando abaixo do header após eu colocar
+        o menu com position:relative; e z-indez:1000;
+        */
+            display: grid;
+            grid-template-columns: auto;
+            background-color: hsl(0, 0%, 98%);
+            height: 100%;
+        }
+
+        .container_first_item_first {
+            margin-top: 500px;
+        }
+
+        .container_first_item_first_one {
+            width: 100%;
+            text-align: center;
+        }
+
+        .container_first_item_first_two {
+            width: 100%;
+            text-align: center;
+        }
+
+        .container_first {
+            background-image: url(../images/bg-intro-mobile.svg);
+            background-repeat: no-repeat;
+            background-position: 0px 0px;
+            background-size: 100% 60%;
+        }
+
+        .container_first_img img {
+            width: 497px;
+            height: 679px;
+        }
+
+        .container_first_img {
+
+            margin: auto;
+            position: absolute;
+            left: 50%;
+            top: -542px;
+            transform: translate(-50%, 50%);
+        }
+
+        .shadow {
+            position: absolute;
+            display: block;
+            background: linear-gradient(black 80%, transparent);
+            width: 100%;
+            top: -20px;
+            height: 100vh;
+            z-index: -2;
+            opacity: 0.3;
+            /* opacity:0;
+        transition: opacity 10ms;  */
+            transform: translateX(190%);
+            transition: transform 200ms;
+        }
+
+        .move_shadow {
+            transform: translateX(0);
+            /* opacity:0.3;  */
+        }
     }
-     .container_first_item_first_one{
-        width: 100%;
-        text-align: center;
-}
-    .container_first_item_first_two{
-        width: 100%;  
-        text-align: center;          
+
+    @media (max-width:500px) {
+        .container_third_item_second {
+            padding: 2px;
+        }
     }
-     .container_first{
-        background-image: url(../images/bg-intro-mobile.svg);
-        background-repeat: no-repeat;
-        background-position: 0px 0px; 
-       background-size: 100% 60%;
-    }  
-    .container_first_img img{
-    width: 497px;
-    height:679px;
-  }
-    .container_first_img{
-               
-        margin: auto;
-        position: absolute;
-        left:50%;
-        top: -542px;
-        transform: translate(-50%,50%); 
-           
+
+    @media (max-width:320px) {
+        .container_first_item_first_one {
+            font-size: 2rem;
+        }
+
+        .container_third_item_second {
+            padding-top: 40px;
+            padding-right: 0;
+            margin: 0;
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
-    .shadow{
-        /* backdrop-filter: blur(10px); */
-        position: absolute;
-        display: block;
-        background:linear-gradient( black 80%, transparent );
-        width: 100%;
-        top: -20px;
-        height: 100vh;
-        z-index: -2; 
-        opacity: 0.3;
-    }
-}
