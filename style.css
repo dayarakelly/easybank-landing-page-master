@@ -354,7 +354,15 @@ footer{
     box-shadow: inset 1px 1px 60px rgba(255,255,255,0.7);
 }
 
+@media (max-width:1000px){
+    .container_first_item_first{   
+        padding-top: 100px;
+   }
+}
 @media (max-width:860px){
+    .container_first_item_first{   
+        padding-top: 80px;
+   }
 .link_nav{
  font-size:16px;
 }
@@ -410,7 +418,8 @@ footer{
             padding: 10px;
         }
         
-        .menu{
+        /* .menu{
+            display: none;
             position: absolute;
            grid-template-columns: auto;
            background-color: white;
@@ -421,22 +430,12 @@ footer{
            top:10px;
            border-radius: 8px; 
            padding-bottom: 8px;         
-        }
+        } */
         .menu_item_cinco{
             padding-bottom: 5px;
         }
         
-        .shadow{
-            /* backdrop-filter: blur(10px); */
-            position: absolute;
-            display: block;
-            background:linear-gradient( black 80%, transparent );
-            width: 100%;
-            top: -20px;
-            height: 100vh;
-            z-index: -2; 
-            opacity: 0.3;
-        }
+        
         nav{
            position: relative;
           display: grid;
@@ -444,30 +443,39 @@ footer{
           justify-content:space-between;
          /* justify-content:start;para a logo iniciar rente (a esquerda) ao menu*/
         }
-        
+      
     @media (max-width:790px){
-    .container_first{
+        .container_first_img img{
+            width: 657px;
+          height:839px;
+      }
+        .container_first_item_first{   
+            padding-top: 60px;
+       }
+  
+    /* .container_first{
         position: relative;
         /* position: absolute; 
         Isto estava atrapalhando o .container_second
         que estava ficando abaixo do header após eu colocar
         o menu com position:relative; e z-indez:1000;
         */ 
-        display:grid;
+       /* display:grid;
         grid-template-columns: auto;
-        background-color:hsl(0, 0%, 98%) ;       
-    }
+        background-color:hsl(0, 0%, 98%) ; 
+        background-color: blueviolet;      
+    } */
     .container_first_item_first{   
       padding: 52px;
    }
-    .container_first_item_first_one{
+    /* .container_first_item_first_one{
         width: 100%;
         text-align: center;
-}
-    .container_first_item_first_two{
+} */
+    /* .container_first_item_first_two{
         width: 100%;  
         text-align: center;          
-    }
+    } */
     .btn_container_first{
          margin:auto;
          margin-top: 25px;
@@ -517,6 +525,92 @@ footer{
         margin: auto;
     }
 }
-@media (max-width:500px){
+@media (max-width:610px){
+    .container_first_item_first_one{
+            font-size: 2.9rem;
+    } 
+}
+@media (max-width:580px){
+    .container_first_item_first_one{
+        font-size: 2.8rem;
+}
+    .container_first_img img{
+        width: 635px;
+      height:817px;
+  }
+  .btn_container_first{
+    font-size: 16px;
+  }
+}
+@media (max-width:545px){
+      .menu{
+            display: none;
+            position: absolute;
+           grid-template-columns: auto;
+           background-color: white;
+           justify-content: center;
+           width: 90%;
+           margin: 20px;
+           margin-top: 65px;
+           top:10px;
+           border-radius: 8px; 
+           padding-bottom: 8px;         
+        }
+    .container_first{
+        /* bg-intro-mobile
+        image-mockups */
+        position: relative;
+        /* position: absolute; 
+        Isto estava atrapalhando o .container_second
+        que estava ficando abaixo do header após eu colocar
+        o menu com position:relative; e z-indez:1000;
+        */ 
+      display:grid;
+        grid-template-columns: auto;
+        background-color:hsl(0, 0%, 98%) ; 
+        height: 100%;
+             
+    } 
+   .container_first_item_first{
+    margin-top: 500px;
 
+    }
+     .container_first_item_first_one{
+        width: 100%;
+        text-align: center;
+}
+    .container_first_item_first_two{
+        width: 100%;  
+        text-align: center;          
+    }
+     .container_first{
+        background-image: url(../images/bg-intro-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: 0px 0px; 
+       background-size: 100% 60%;
+    }  
+    .container_first_img img{
+    width: 497px;
+    height:679px;
+  }
+    .container_first_img{
+               
+        margin: auto;
+        position: absolute;
+        left:50%;
+        top: -542px;
+        transform: translate(-50%,50%); 
+           
+    }
+    .shadow{
+        /* backdrop-filter: blur(10px); */
+        position: absolute;
+        display: block;
+        background:linear-gradient( black 80%, transparent );
+        width: 100%;
+        top: -20px;
+        height: 100vh;
+        z-index: -2; 
+        opacity: 0.3;
+    }
 }
