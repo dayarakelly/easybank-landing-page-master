@@ -481,6 +481,7 @@ footer {
         display: grid;
         grid-template-columns: auto auto auto;
         justify-content: space-around;
+        
         /* justify-content:start;para a logo iniciar rente (a esquerda) ao menu*/
     }
 
@@ -640,7 +641,7 @@ footer {
 
         .menu_open {
             display: block;
-            position: absolute;
+            position: fixed;/*antes era absolute, mas em telas menores acabava mostrando a parte de fora do body*/
             grid-template-columns: auto;
             background-color: white;
             justify-content: center;
@@ -650,9 +651,10 @@ footer {
             top: 10px;
             border-radius: 8px;
             padding-bottom: 8px;
+            right: 0;
             /* opacity:0;
             transition: opacity 400ms;  */
-            transform: translateX(190%);
+            transform: translateX(125%);
             transition: transform 550ms;
         }
 
