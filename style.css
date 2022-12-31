@@ -616,7 +616,7 @@ footer {
             background-image: url(../images/menu.png);
             background-repeat: no-repeat;
             background-position: 15px center;
-            padding: 2px 35px;
+            padding: 2px 30px;
             /*sem o padding o menu e o texto some com o text-ident*/
             text-indent: -9999px;
         }
@@ -626,7 +626,7 @@ footer {
             background-image: url(../images/icon-close.svg);
             background-repeat: no-repeat;
             background-position: 15px center;
-            padding: 2px 35px;
+            padding: 2px 30px;
             /*sem o padding o menu e o texto somem com o text-ident*/
             text-indent: -9999px;
         }
@@ -705,7 +705,7 @@ footer {
         }
 
         .shadow {
-            position: absolute;
+            position:absolute;
             display: block;
             background: linear-gradient(black 80%, transparent);
             width: 100%;
@@ -713,6 +713,7 @@ footer {
             height: 100vh;
             z-index: -2;
             opacity: 0.3;
+            
             /* opacity:0;
         transition: opacity 10ms;  */
             transform: translateX(10%);
@@ -721,7 +722,7 @@ footer {
 
         .move_shadow {
             transform: translateX(0);
-            /* opacity:0.3;  */
+            
         }
     }
 
