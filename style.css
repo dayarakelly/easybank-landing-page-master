@@ -617,8 +617,9 @@ footer {
             background-repeat: no-repeat;
             background-position: 15px center;
             padding: 2px 30px;
+            background-color: aliceblue;
             /*sem o padding o menu e o texto some com o text-ident*/
-            text-indent: -9999px;
+            text-indent: -999px;
         }
 
         .menu_fechar {
