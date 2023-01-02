@@ -613,7 +613,7 @@ footer {
 
         .menu_abrir {
             display: inline-block;
-            background-image: url(../images/menu.png);
+            background-image: url(images/menu.png);
             background-repeat: no-repeat;
             background-position: 15px center;
             padding: 2px 30px;
@@ -623,7 +623,7 @@ footer {
 
         .menu_fechar {
             display: inline-block;
-            background-image: url(../images/icon-close.svg);
+            background-image: url(./images/icon-close.svg);
             background-repeat: no-repeat;
             background-position: 15px center;
             padding: 2px 30px;
