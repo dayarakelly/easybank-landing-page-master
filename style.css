@@ -610,7 +610,10 @@ footer {
             justify-content: space-between;
             /* justify-content:start;para a logo iniciar rente (a esquerda) ao menu*/
         }
-
+        /*Declarações para que as imagens sejam carregadas no git pages 
+        ulr(pasta/nome.extensão)
+        ulr(./pasta/nome.extensão)
+        */
         .menu_abrir {
             display: inline-block;
             background-image: url(images/menu.png);
