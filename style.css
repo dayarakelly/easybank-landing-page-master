@@ -380,6 +380,8 @@ footer {
 
 .footer_container_first_item_second a {
     font-size: 14px;
+    text-decoration: none;
+    
 }
 
 .menu_footer_item {
@@ -742,7 +744,16 @@ footer {
             width: 392px;
             height: 574px;
         }
+
+        @media (max-width:420px) {
+       .container_second_item_second{
+        padding-top: 40px;
+        padding-right: 0;
+        margin: 0;
+        padding-left: 20px;
+        padding-right: 20px;
     }
+}
     @media (max-width:390px) {
     .container_first_img {
         left: 50%;
@@ -752,13 +763,12 @@ footer {
     .container_first_img img {
         width: 372px;
         height: 550px;
-    }
+    } 
 }
     @media (max-width:320px) {
         .container_first_item_first_one {
             font-size: 2rem;
         }
-
         .container_third_item_second {
             padding-top: 40px;
             padding-right: 0;
